@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Input</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-list>
+
+  <ion-item>
+    <ion-label floating>Systolic</ion-label>
+    <ion-input [(ngModel)]="systolicbp" type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Diastolic</ion-label>
+    <ion-input [(ngModel)]= "diastolicbp" type="number"></ion-input>
+  </ion-item>
+
+</ion-list>
+  <button ion-button (click)="submitBp()">Submit</button>
+  <hr>
+  <button ion-button (click)="resetbp()">Reset</button>
+</ion-content>

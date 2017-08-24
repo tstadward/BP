@@ -1,0 +1,25 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>stored</ion-title>
+
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h1> Blood Pressure </h1>
+ <ion-grid>
+  <ion-row justify-content-between>
+    <ion-col col-2>
+      <div *ngFor =" let sys of NewSystolic"> {{sys}} /</div>
+    </ion-col>
+    <ion-col >
+      <div *ngFor = " let dia of NewDiastolic">{{dia}}</div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
